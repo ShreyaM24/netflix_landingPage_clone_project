@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+
+body{
+    background: linear-gradient(#000,rgb(67, 31, 37), #000);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    width: 100%;
+}
+
+.nav .logo img{
+    width: 10rem;
+}
+
+.nav .buttons{
+    width: 10rem;
+}
+
+.nav .options{
+    display: flex;
+    font-size: 1rem;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #000000d7;
+    border-radius: 20rem;
+    cursor: pointer;
+}
+
+.nav .options div{
+    opacity: 0.7;
+}
+
+.nav .options div:hover{
+    opacity: 1;
+}
+
+.nav .buttons{
+    display: flex;
+    width: 15%;
+    gap: 1.5rem;
+}
+
+.nav .buttons select{
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 20rem;
+    border: 1px solid white;
+    outline: 2px solid white;
+    outline-offset: 2px;
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+    padding: 0 0.75rem;
+    font-weight: 500;
+}
+
+.nav .buttons button{
+    background: white;
+    color: rgb(0, 0, 0);
+    border-radius: 20rem;
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+    padding: 0 0.75rem;
+    font-weight: 500;
+}
+
+.main{
+    position: relative;
+    width: 90%;
+    height: 35.375rem;
+    margin-top: 10rem;
+    margin-left: 4rem;
+    background: #000;
+    border-radius: 2rem;
+    
+
+}
+
+.main .overlay{
+    position: absolute;
+    margin: 0.1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: 0.7;
+    border-radius: 2rem;
+}
+.main img{
+    width: 100%;
+    height: 35.375rem;
+    border-radius: 2rem;
+    object-fit: cover;
+    display: block;
+}
+
+.main .text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    z-index: 2;
+}
+
+.main .text h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.main .text .subheading{
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 500;
+}
+
+.main .email {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.main .email input{
+    height: 3.5rem;
+    width: 22rem;
+    border-radius: 2rem;
+    background: #464646c8;
+    border: none;
+    appearance: none;
+}
+
+.main .email button{
+    height: 3.5rem;
+    width: 15rem;
+    border-radius: 2rem;
+    background: #e50914;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.main .email ::placeholder{
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.trending{
+    padding: 3rem 7rem;
+}
+
+.trending .posters{
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 3rem;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.trending .posters img{
+    height: 17rem;
+    border-radius: 1rem;
+}
+
+.trending h1{
+    padding-bottom: 3rem;
+}
+
+.trending .posters .poster{
+    position: relative;
+}
+
+.trending .posters .poster span{
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    position:absolute;
+    top: -0.5rem;
+    left: -1.25rem;
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.792);
+    text-shadow: 0 0 1.5rem rgba(0,0,0,0.5);
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.79);
+}
+
+.trending .posters .poster:hover{
+    transform: scale(1.05);
+    width: auto;
+    transition: ease-in-out 0.3s;
+}
+
+.trending .posters button{
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6rem;
+    cursor: pointer;
+}
+
+.plans h3{
+    padding: 0 6rem;
+}
+
+.card{
+    margin-top: 2rem;
+    width: 20rem;
+    height: 15rem;
+    background: linear-gradient(135deg, rgb(18, 18, 135), rgb(17, 1, 37));
+    border-radius: 1rem;
+    border: solid 0.5px rgba(255, 255, 255, 0.381);
+    opacity: 0.7;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+.plans .card a svg{
+    height: 1rem;
+    filter: invert(10);
+    opacity: 0.9;
+}
+
+.plans .card .card-body p img{
+    height: 1rem;
+    filter: invert(10);
+    padding-right: 1rem;
+}
+
+.plans .cards .card:hover{
+    opacity: 1;
+    transform: scale(1.01);
+    transition: ease-in-out 0.1s;
+}
+
+.reasons h3{
+    padding: 3rem 6rem;
+    padding-bottom: 0;
+}
+
+.reasons .cards .card{
+    background: rgb(49, 49, 49);
+    opacity: 1;
+}
+
+.reasons .cards .card .card-body i{
+    padding-left: 16rem;
+    font-size: 1.5rem;
+}
+
+.reasons .cards{
+    padding: 0 6rem;
+}
+
+.faq{
+    padding: 3rem 6rem;
+}
+
+.faq h1{
+    padding-bottom: 2rem;
+}
+
+.email-again{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-again .teartiaryheading-again{
+    padding-bottom: 1rem;
+}
+
+.email-again .email{
+    display: flex;
+    gap: 1rem;
+}
+
+.email-again .email input{
+    height: 3.5rem;
+    width: 22rem;
+    border-radius: 2rem;
+    background: #464646c8;
+    border: none;
+    appearance: none;
+}
+
+.email-again .email button{
+    height: 3.5rem;
+    width: 15rem;
+    border-radius: 2rem;
+    background: #e50914;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.email-again .email ::placeholder{
+    color: white;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.questions{
+    padding: 5rem 6rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.questions a{
+    color: white;
+}
+
+.questions li{
+    list-style: none;
+    text-decoration: underline;
+}
+
+.questions .list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-again{
+    background: transparent;
+    color: rgb(255, 255, 255);
+    border-radius: 20rem;
+    border: 1px solid white;
+    outline: 2px solid white;
+    outline-offset: 2px;
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+    margin-left: 6rem;
+    padding: 0 0.75rem;
+    font-weight: 500;
+}
+
+.done{
+    margin-top: 6rem;
+    padding-bottom: 10rem;
+    margin-left: 6rem;
+    opacity: 0.7;
+}

@@ -22,8 +22,8 @@ This project focuses on **UI replication, responsiveness, and front-end layout d
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/your-username/netflix-landing-clone.git
-cd netflix-landing-clone
+git clone https://github.com/ShreyaM24/netflix_landingPage_clone_project.git
+cd netflix_landingPage_clone_project
 ````
 
 ### 2️⃣ Run the project
